@@ -5,7 +5,7 @@ class FaviconMiddleware
 
   def call(env)
     @status, @headers, @response = @app.call(env)
-    return [@status, @headers, 'favicon.ico'] if env['PATH_INFO'] == '/favicon.ico'
+    return [@status, @headers, ['favicon.ico']] if env['PATH_INFO'] == '/favicon.ico'
 
     [@status, @headers, @response]
   end
