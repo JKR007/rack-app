@@ -1,4 +1,4 @@
-class ApplicationLogger
+class ApplicationLoggerMiddleware
   def initialize(app)
     @app = app
   end
