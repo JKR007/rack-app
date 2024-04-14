@@ -8,4 +8,4 @@ ruby - 3.0.3
 ### Running application
 
 #### With "thin" server - run command:
-`>% thin -R rack_app.ru -a 127.0.0.1 -p 9292 start`
+`>% thin -R rack_app/rack_app.ru -a 127.0.0.1 -p 9292 start`
